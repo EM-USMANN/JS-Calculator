@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="calc-container">
+        <div class="calc-card">
+            <div class="calc-header">
+                <h2>Calculator</h2>
+                <button onclick="toggleDarkMode()" class="toggle-mode">🌙</button>
+            </div>
+            <input type="text" id="display" class="calc-display" disabled />
+            <div class="calc-buttons">
+                <button class="util-btn" onclick="clearDisplay()">C</button>
+                <button class="util-btn" onclick="backspace()">⌫</button>
+                <button class="op" onclick="press('/')">÷</button>
+                <button class="op" onclick="press('*')">×</button>
+                <button onclick="press('7')">7</button>
+                <button onclick="press('8')">8</button>
+                <button onclick="press('9')">9</button>
+                <button class="op" onclick="press('-')">−</button>
+                <button onclick="press('4')">4</button>
+                <button onclick="press('5')">5</button>
+                <button onclick="press('6')">6</button>
+                <button class="op" onclick="press('+')">+</button>
+                <button onclick="press('1')">1</button>
+                <button onclick="press('2')">2</button>
+                <button onclick="press('3')">3</button>
+                <button class="equal-btn" onclick="calculate()" rowspan="2">=</button>
+                <button class="zero-btn" onclick="press('0')">0</button>
+                <button onclick="press('.')">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
